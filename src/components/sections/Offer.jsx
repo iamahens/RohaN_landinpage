@@ -34,7 +34,7 @@ export const Offer = () => (
                         icon: "✍️"
                     },
                     {
-                        title: "Live Value Workshops",
+                        title: "Live Value Workshops For you",
                         icon: "💡"
                     },
                     {
