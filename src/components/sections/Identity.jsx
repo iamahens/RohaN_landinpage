@@ -8,56 +8,68 @@ export const Identity = () => (
             <FadeInWhenVisible>
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                        How to Define Your Unique Identity
+                        Why Should You Join The Community?
                     </h2>
                     <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
-                        Find what you are best at in the world by answering these 3 questions.
+                        Here's how we ensure your success.
                     </p>
                 </div>
             </FadeInWhenVisible>
-            
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 {[
                     {
-                        question: "1. What do you love?",
-                        answer: "What are you passionate about? What excites you, even if you weren't paid for it?",
-                        color: "from-pink-500 to-rose-500",
-                        icon: "❤️"
+                        title: "Guided Implementation",
+                        description: "We will help you implement the guide with you, ensuring you take consistent action.",
+                        icon: (
+                            <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        )
                     },
                     {
-                        question: "2. What are you good at?",
-                        answer: "What skills or strengths do you consistently get complimented on or see results from?",
-                        color: "from-green-500 to-emerald-500",
-                        icon: "⭐"
+                        title: "Solve All Your Doubts",
+                        description: "Never get stuck again. We will solve all your doubts about creating compelling content.",
+                        icon: (
+                            <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.105A9.702 9.702 0 015 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        )
                     },
                     {
-                        question: "3. What do people need?",
-                        answer: "What problems do others have that you can solve with your skills, and they are willing to pay for?",
-                        color: "from-blue-500 to-cyan-500",
-                        icon: "💰"
+                        title: "Build Your Brand",
+                        description: "We will motivate and empower you with the strategies needed to build a powerful personal brand.",
+                        icon: (
+                            <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        )
+                    },
+                    {
+                        title: "Weekly LIVE Sessions",
+                        description: "Get consistent guidance and stay on track with our exclusive weekly live sessions for your journey.",
+                        icon: (
+                            <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                        )
                     }
                 ].map((item, index) => (
                     <FadeInWhenVisible key={index} delay={index * 200}>
-                        <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl group text-center">
-                            <div className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
-                                <span className="text-2xl">{item.icon}</span>
+                        <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 p-8 rounded-2xl shadow-xl border border-orange-700/50 hover:border-orange-500/70 transition-all duration-500 transform hover:scale-105 hover:shadow-orange-500/15 group hover:-translate-y-1 text-left">
+                            <div className="flex items-center mb-4">
+                                <div className="w-16 h-16 bg-gray-800/50 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                                    {item.icon}
+                                </div>
+                                <h3 className="text-2xl font-bold text-white">{item.title}</h3>
                             </div>
-                            <h3 className="text-2xl font-bold mb-4 text-white">{item.question}</h3>
-                            <p className="text-gray-400 leading-relaxed">{item.answer}</p>
+                            <p className="text-gray-300 leading-relaxed">{item.description}</p>
                         </div>
                     </FadeInWhenVisible>
                 ))}
             </div>
-            
-            <FadeInWhenVisible delay={600}>
-                <div className="text-center mt-12">
-                    <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm border-2 border-purple-500/30 rounded-2xl p-8 max-w-3xl mx-auto">
-                        <p className="font-bold text-2xl bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            If you answer ONE Thing for all three questions, that's your niche.
-                        </p>
-                    </div>
-                </div>
-            </FadeInWhenVisible>
+
+            {/* The "If you answer ONE Thing..." section has been removed as per the request to use the new content and card style. */}
         </div>
     </section>
 );

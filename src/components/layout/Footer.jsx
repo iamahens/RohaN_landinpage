@@ -6,7 +6,7 @@ export const Footer = () => (
         <div className="container mx-auto px-6 text-center relative z-10">
             <div className="mb-8">
                 <h3 className="text-3xl font-black text-white mb-4">
-                    <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">AI</span>-Proof Career
+                    <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Rohan</span>Agrahari
                 </h3>
                 <p className="text-gray-400 max-w-2xl mx-auto">
                     Transform yourself from a commodity into an irreplaceable expert using the power of AI.

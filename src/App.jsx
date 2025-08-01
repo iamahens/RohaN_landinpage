@@ -8,6 +8,13 @@ import { ContentSystem } from './components/sections/ContentSystem';
 import { Offer } from './components/sections/Offer';
 import { CTA } from './components/sections/CTA';
 import { Footer } from './components/layout/Footer';
+import InstagramCTA from './components/sections/InstagramCTA';
+import ContactSection from './components/sections/ContactSection';
+import { AboutMe } from './components/sections/AboutMe';
+import { VideoTestimonialsSection } from './components/sections/VideoTestimonialSection';
+import { TestimonialCarouselSection } from './components/sections/TestimonialCarouselSection';
+import { FAQSection } from './components/sections/FAQSection';
+
 
 export default function App() {
     useEffect(() => {
@@ -119,11 +126,17 @@ export default function App() {
             <Header />
             <main>
                 <Hero />
+                <InstagramCTA/>
+                <AboutMe/>
+                <Offer />
                 <Problem />
                 <Solution />
+              
                 <Identity />
-                <ContentSystem />
-                <Offer />
+                <VideoTestimonialsSection/>
+                <TestimonialCarouselSection/>
+                 <FAQSection/>
+                <ContactSection/>
                 <CTA />
             </main>
             <Footer />

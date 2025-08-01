@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { FadeInWhenVisible } from '../common/FadeInWhenVisible'; // Assuming this component is available
 
 // Custom hook to detect when an element is in view
 const useInView = (options) => {
@@ -61,12 +60,12 @@ const ProcessStep = ({ step, index }) => {
     );
 };
 
-
-export const Solution = () => {
-    // Use useInView for the main title and paragraph within the Solution component
+// Main component for the Program Process section
+const ProgramProcess = ({ onRegisterClick }) => {
+    // Use useInView for the main title and paragraph
     const [titleRef, isTitleVisible] = useInView({ threshold: 0.5 });
 
-    // Content for the 4-week program steps (moved from ProgramProcess)
+    // Content for the 4-week program steps
     const processSteps = [
         {
             icon: <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>,
@@ -90,14 +89,8 @@ export const Solution = () => {
         }
     ];
 
-    // Placeholder for onRegisterClick as it's not defined in the original Solution context
-    const handleRegisterClick = () => {
-        console.log("Register button clicked!");
-        // In a real application, you would open a modal or navigate here.
-    };
-
     return (
-        <section id="solution" className="py-24 bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden">
+        <section className="relative py-24 px-4 bg-gray-900 text-white overflow-hidden">
             {/* Background gradient for the white hue effect */}
             <div className="absolute inset-0 z-0 opacity-20"
                  style={{
@@ -105,19 +98,17 @@ export const Solution = () => {
                  }}>
             </div>
             {/* Another subtle gradient from the original problem section */}
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-900/10 to-yellow-900/10 z-0"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-900/5 to-red-900/5 z-0"></div>
 
-            <div className="container mx-auto px-6 text-center relative z-10">
-                <FadeInWhenVisible>
-                    <div ref={titleRef} className="text-center mb-16">
-                        <h2 className={`text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent transition-all duration-700 ${isTitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                            What You'll Learn in <span className="text-orange-400">4 Weeks</span>
-                        </h2>
-                        <p className={`text-xl text-gray-400 transition-all duration-700 delay-200 ${isTitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                            A clear path to building a strong personal brand.
-                        </p>
-                    </div>
-                </FadeInWhenVisible>
+            <div className="container mx-auto relative z-10">
+                <div ref={titleRef} className="text-center mb-16">
+                    <h2 className={`text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent transition-all duration-700 ${isTitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                        What You'll Learn in <span className="text-orange-400">4 Weeks</span>
+                    </h2>
+                    <p className={`text-xl text-gray-400 transition-all duration-700 delay-200 ${isTitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                        A clear path to building a strong personal brand.
+                    </p>
+                </div>
 
                 <div className="relative max-w-2xl mx-auto">
                     {/* The vertical line */}
@@ -130,7 +121,7 @@ export const Solution = () => {
 
                 <div className="text-center mt-16">
                     <button
-                        onClick={handleRegisterClick}
+                        onClick={onRegisterClick}
                         className="inline-block px-10 py-4 text-xl font-bold text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-full shadow-lg
                                    transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 active:scale-95 active:translate-y-0.5
                                    focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-75"
@@ -142,3 +133,5 @@ export const Solution = () => {
         </section>
     );
 };
+
+export default ProgramProcess;

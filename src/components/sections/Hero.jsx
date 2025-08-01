@@ -3,7 +3,7 @@ import { ParticlesBackground } from '../common/ParticlesBackground';
 import { ArrowIcon } from '../common/Icons';
 
 export const Hero = () => (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
+    <section id="hero" className="relative min-h-screen mt-20 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white overflow-hidden">
         <ParticlesBackground />
         
         {/* Animated background grid */}
@@ -25,17 +25,18 @@ export const Hero = () => (
                 <div className="text-center lg:text-left">
                     <div className="animate-fade-in-down">
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
-                            AI is going to <span className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-pulse">replace</span> you.
+                           How to build an  <span className="bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 bg-clip-text text-transparent animate-pulse">AI-Proof </span> Career?
                         </h1>
                     </div>
                     <div className="animate-fade-in-up">
                         <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 font-light leading-relaxed">
-                            Unless you're an <span className="text-orange-400 font-semibold">Expert</span>, you're a commodity. Today, I will teach you how to <span className="text-orange-400 font-semibold">beat AI</span> while using AI.
+                            Unless you're an <span className="text-orange-400 font-semibold">Become </span>an Expert by building a  <span className="text-orange-400 font-semibold">strong</span> personal brand.
                         </p>
                         
                         <div className="bg-gradient-to-r from-yellow-400/20 to-orange-400/20 backdrop-blur-sm border border-yellow-400/30 rounded-2xl p-6 mb-8">
                             <p className="font-semibold text-lg md:text-xl text-yellow-300">
-                                Chat karke batayieye ki aap India me kaha se join kar rahe hai
+                               Worried AI might replace you?</p>
+<p>Learn to stand out, create content, and become irreplaceable — in just 50 minutes.
                             </p>
                         </div>
                         
@@ -63,9 +64,9 @@ export const Hero = () => (
                         {/* Main image container */}
                         <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-2">
                             <img 
-                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face"
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=450&fit=crop&crop=face"
                                 alt="Expert Professional"
-                                className="w-full h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl"
+                                className="w-full h-[350px] lg:h-[450px] object-cover rounded-2xl shadow-2xl"
                             />
                             
                             {/* Floating badges */}
