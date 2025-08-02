@@ -51,24 +51,24 @@ export const AboutMe = () => {
                         </FadeInWhenVisible>
                     </div>
 
-                    {/* Right Column: Image Collage */}
-                   <div className="relative flex justify-center items-center lg:justify-end">
+           {/* Right Column: Image Collage */}
+<div className="relative flex justify-center items-center lg:justify-end">
     <FadeInWhenVisible delay={200}>
         {/* New grid structure for the collage with controlled max-width */}
-        <div className="grid grid-cols-2 gap-4 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none"> {/* Adjusted max-w for better responsiveness */}
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-none"> {/* Smaller max-width for mobile */}
             {/* Main Portrait Image (Left) */}
-            <div className="relative col-span-1 row-span-2 rounded-2xl overflow-hidden shadow-2xl border-5 border-gray-300 transform hover:scale-105 transition-transform duration-300">
-                <img src="/images/about2.jpg" alt="Rohan Agrahari Main" className="w-full h-[400px] object-cover rounded-2xl" />
+            <div className="relative col-span-1 row-span-2 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-300 transform hover:scale-105 transition-transform duration-300">
+                <img src="/images/about2.jpg" alt="Rohan Agrahari Main" className="w-full h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] object-cover rounded-xl sm:rounded-2xl" />
                 {/* Forbes Badge overlaid on the main image */}
                 
             </div>
             {/* Top Right Image */}
-            <div className="col-span-1 rounded-2xl overflow-hidden shadow-2xl border-5 border-gray-300 transform hover:scale-105 transition-transform duration-300">
-                <img src="/images/about3.jpg" alt="Rohan Agrahari Image 2" className="w-full h-[192px] object-cover rounded-2xl" />
+            <div className="col-span-1 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-300 transform hover:scale-105 transition-transform duration-300">
+                <img src="/images/about3.jpg" alt="Rohan Agrahari Image 2" className="w-full h-[135px] sm:h-[155px] md:h-[175px] lg:h-[192px] object-cover rounded-xl sm:rounded-2xl" />
             </div>
             {/* Bottom Right Image */}
-            <div className="col-span-1 rounded-2xl overflow-hidden shadow-2xl border-5 border-gray-300 transform hover:scale-105 transition-transform duration-300">
-                <img src="/images/about1.jpeg" alt="Rohan Agrahari Image 3" className="w-full h-[192px] object-cover rounded-2xl" />
+            <div className="col-span-1 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-300 transform hover:scale-105 transition-transform duration-300">
+                <img src="/images/about1.jpeg" alt="Rohan Agrahari Image 3" className="w-full h-[135px] sm:h-[155px] md:h-[175px] lg:h-[192px] object-cover rounded-xl sm:rounded-2xl" />
             </div>
         </div>
     </FadeInWhenVisible>
