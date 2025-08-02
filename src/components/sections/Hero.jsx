@@ -56,17 +56,17 @@ export const Hero = () => (
                 </div>
 
                 {/* Right Image */}
-                <div className="relative animate-fade-in-right">
+                <div className="relative animate-fade-in-right flex justify-center">
                     <div className="relative">
                         {/* Glowing border effect */}
                         <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 rounded-3xl blur opacity-75 animate-pulse"></div>
                         
-                        {/* Main image container */}
+                        {/* Main image container - Fixed 350x350 size */}
                         <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-2">
                             <img 
                                 src="/images/herosection.jpg"
                                 alt="Expert Professional"
-                                className="w-full h-[350px] lg:h-[450px] object-cover rounded-2xl shadow-2xl"
+                                className="w-[450px] h-[450px] object-cover rounded-2xl shadow-2xl"
                             />
                             
                             {/* Floating badges */}

@@ -1,32 +1,50 @@
 import React from 'react';
 import { FadeInWhenVisible } from '../common/FadeInWhenVisible'; // Assuming this component is available
 
+// Import your images from assets folder
+import image1 from '/images/gallery1.jpeg'; // Replace with your actual image names
+import image2 from '/images/gallery2.jpeg';
+import image3 from '/images/gallery3.jpeg';
+import image4 from '/images/gallery4.jpeg';
+import image5 from '/images/gallery5.jpeg';
+import image6 from '/images/gallery6.jpeg';
+import image7 from '/images/gallery7.jpeg';
+import image8 from '/images/gallery8.jpeg';
+import image9 from '/images/gallery9.jpeg';
+import image10 from '/images/gallery10.jpeg';
+import image11 from '/images/gallery11.jpeg';
+import image12 from '/images/gallery12.jpeg';
+import image13 from '/images/gallery13.jpeg';
+import image14 from '/images/gallery14.jpeg';
+import image15 from '/images/gallery15.jpeg';
+import image16 from '/images/gallery16.jpeg';
+
+
 export const ImageCarouselSection = () => {
-    // Original images
+    // Original images using imported assets
     const originalImages = [
-        { src: "/images/gallery1.jpeg", alt: "Group Photo 1" },
-        { src: "/images/gallery2.jpeg", alt: "Group Photo 2" },
-        { src: "/images/gallery3.jpeg", alt: "Group Photo 3" },
-        { src: "/images/gallery4.jpeg", alt: "Group Photo 4" },
-        { src: "/images/gallery5.jpeg", alt: "Group Photo 1" },
-        { src: "/images/gallery6.jpeg", alt: "Group Photo 2" },
-        { src: "/images/gallery7.jpeg", alt: "Group Photo 3" },
-        { src: "/images/gallery8.jpeg", alt: "Group Photo 4" },
-        { src: "/images/gallery9.jpeg", alt: "Group Photo 1" },
-        { src: "/images/gallery10.jpeg", alt: "Group Photo 2" },
-        { src: "/images/gallery11.jpeg", alt: "Group Photo 3" },
-        { src: "/images/gallery12.jpeg", alt: "Group Photo 4" },
-        { src: "/images/gallery13.jpeg", alt: "Group Photo 1" },
-        { src: "/images/gallery14.jpeg", alt: "Group Photo 2" },
-        { src: "/images/gallery15.jpeg", alt: "Group Photo 3" },
-        { src: "/images/gallery16.jpeg", alt: "Group Photo 4" },
-        
+        { src: image1, alt: "Group Photo 1" },
+        { src: image2, alt: "Group Photo 2" },
+        { src: image3, alt: "Group Photo 3" },
+        { src: image4, alt: "Group Photo 4" },
+        { src: image5, alt: "Group Photo 5" },
+        { src: image6, alt: "Group Photo 6" },
+        { src: image7, alt: "Group Photo 7" },
+        { src: image8, alt: "Group Photo 8" },
+        { src: image9, alt: "Group Photo 5" },
+        { src: image10, alt: "Group Photo 6" },
+        { src: image11, alt: "Group Photo 7" },
+        { src: image12, alt: "Group Photo 8" },
+        { src: image13, alt: "Group Photo 5" },
+        { src: image14, alt: "Group Photo 6" },
+        { src: image15, alt: "Group Photo 7" },
+        { src: image16, alt: "Group Photo 8" },
     ];
 
     // Duplicate images for seamless looping
     const images = [...originalImages, ...originalImages];
 
-    const CarouselRow = ({ direction = 'left', images, animationDuration = '100s' }) => {
+    const CarouselRow = ({ direction = 'left', images, animationDuration = '30s' }) => {
         return (
             <div className="relative overflow-hidden mb-8">
                 <div 
@@ -86,11 +104,11 @@ export const ImageCarouselSection = () => {
                 }
                 
                 .animate-scroll-left {
-                    animation: scroll-left 50s linear infinite;
+                    animation: scroll-left 30s linear infinite;
                 }
                 
                 .animate-scroll-right {
-                    animation: scroll-right 100s linear infinite;
+                    animation: scroll-right 30s linear infinite;
                 }
                 
                 /* Pause animation on hover */
@@ -121,14 +139,14 @@ export const ImageCarouselSection = () => {
                         <CarouselRow 
                             direction="left" 
                             images={images} 
-                            animationDuration="30s"
+                            animationDuration="90s"
                         />
 
                         {/* Second Carousel - Moving Right */}
                         <CarouselRow 
                             direction="right" 
                             images={images} 
-                            animationDuration="25s"
+                            animationDuration="110s"
                         />
                     </div>
                 </div>
