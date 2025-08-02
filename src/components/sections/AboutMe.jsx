@@ -1,6 +1,7 @@
 import React from 'react';
 import { FadeInWhenVisible } from '../common/FadeInWhenVisible'; // Assuming this component is available
 
+
 export const AboutMe = () => {
     return (
         <section id="about" className="py-24 bg-gradient-to-b from-gray-900 to-black text-white relative overflow-hidden px-8 md:px-16 lg:px-24">
@@ -57,17 +58,17 @@ export const AboutMe = () => {
                             <div className="grid grid-cols-2 gap-4 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none"> {/* Adjusted max-w for better responsiveness */}
                                 {/* Main Portrait Image (Left) */}
                                 <div className="relative col-span-1 row-span-2 rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
-                                    <img src="/src/assets/images/about2.jpg" alt="Rohan Agrahari Main" className="w-full h-[400px] object-cover rounded-2xl" />
+                                    <img src="/images/about2.jpg" alt="Rohan Agrahari Main" className="w-full h-[400px] object-cover rounded-2xl" />
                                     {/* Forbes Badge overlaid on the main image */}
                                     
                                 </div>
                                 {/* Top Right Image */}
                                 <div className="col-span-1 rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
-                                    <img src="/src/assets/images/about3.jpg" alt="Rohan Agrahari Image 2" className="w-full h-[192px] object-cover rounded-2xl" />
+                                    <img src="/images/about3.jpg" alt="Rohan Agrahari Image 2" className="w-full h-[192px] object-cover rounded-2xl" />
                                 </div>
                                 {/* Bottom Right Image */}
                                 <div className="col-span-1 rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
-                                    <img src="/src/assets/images/about1.jpeg" alt="Rohan Agrahari Image 3" className="w-full h-[192px] object-cover rounded-2xl" />
+                                    <img src="/images/about1.jpeg" alt="Rohan Agrahari Image 3" className="w-full h-[192px] object-cover rounded-2xl" />
                                 </div>
                             </div>
                         </FadeInWhenVisible>

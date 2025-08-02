@@ -4,20 +4,29 @@ import { FadeInWhenVisible } from '../common/FadeInWhenVisible'; // Assuming thi
 export const ImageCarouselSection = () => {
     // Original images
     const originalImages = [
-        { src: "/src/assets/images/gallery1.jpeg", alt: "Group Photo 1" },
-        { src: "/src/assets/images/gallery2.jpeg", alt: "Group Photo 2" },
-        { src: "/src/assets/images/gallery3.jpeg", alt: "Group Photo 3" },
-        { src: "/src/assets/images/gallery4.jpeg", alt: "Group Photo 4" },
-        { src: "https://placehold.co/300x250/1a202c/ffffff?text=Image+5", alt: "Group Photo 5" },
-        { src: "https://placehold.co/300x250/1a202c/ffffff?text=Image+6", alt: "Group Photo 6" },
-        { src: "https://placehold.co/300x250/1a202c/ffffff?text=Image+7", alt: "Group Photo 7" },
-        { src: "https://placehold.co/300x250/1a202c/ffffff?text=Image+8", alt: "Group Photo 8" },
+        { src: "/images/gallery1.jpeg", alt: "Group Photo 1" },
+        { src: "/images/gallery2.jpeg", alt: "Group Photo 2" },
+        { src: "/images/gallery3.jpeg", alt: "Group Photo 3" },
+        { src: "/images/gallery4.jpeg", alt: "Group Photo 4" },
+        { src: "/images/gallery5.jpeg", alt: "Group Photo 1" },
+        { src: "/images/gallery6.jpeg", alt: "Group Photo 2" },
+        { src: "/images/gallery7.jpeg", alt: "Group Photo 3" },
+        { src: "/images/gallery8.jpeg", alt: "Group Photo 4" },
+        { src: "/images/gallery9.jpeg", alt: "Group Photo 1" },
+        { src: "/images/gallery10.jpeg", alt: "Group Photo 2" },
+        { src: "/images/gallery11.jpeg", alt: "Group Photo 3" },
+        { src: "/images/gallery12.jpeg", alt: "Group Photo 4" },
+        { src: "/images/gallery13.jpeg", alt: "Group Photo 1" },
+        { src: "/images/gallery14.jpeg", alt: "Group Photo 2" },
+        { src: "/images/gallery15.jpeg", alt: "Group Photo 3" },
+        { src: "/images/gallery16.jpeg", alt: "Group Photo 4" },
+        
     ];
 
     // Duplicate images for seamless looping
     const images = [...originalImages, ...originalImages];
 
-    const CarouselRow = ({ direction = 'left', images, animationDuration = '30s' }) => {
+    const CarouselRow = ({ direction = 'left', images, animationDuration = '100s' }) => {
         return (
             <div className="relative overflow-hidden mb-8">
                 <div 
@@ -77,11 +86,11 @@ export const ImageCarouselSection = () => {
                 }
                 
                 .animate-scroll-left {
-                    animation: scroll-left 30s linear infinite;
+                    animation: scroll-left 50s linear infinite;
                 }
                 
                 .animate-scroll-right {
-                    animation: scroll-right 30s linear infinite;
+                    animation: scroll-right 100s linear infinite;
                 }
                 
                 /* Pause animation on hover */
