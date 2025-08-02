@@ -50,22 +50,25 @@ export const AboutMe = () => {
                         </FadeInWhenVisible>
                     </div>
 
-                    {/* Right Column: Image Collage (Mockup) */}
+                    {/* Right Column: Image Collage */}
                     <div className="relative flex justify-center items-center lg:justify-end">
                         <FadeInWhenVisible delay={200}>
-                            <div className="grid grid-cols-2 gap-4">
-                                {/* Main image */}
-                                <div className="col-span-2 rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
-                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Rohan Agrahari Main" className="w-full h-[450px] object-cover" />
+                            {/* New grid structure for the collage with controlled max-width */}
+                            <div className="grid grid-cols-2 gap-4 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none"> {/* Adjusted max-w for better responsiveness */}
+                                {/* Main Portrait Image (Left) */}
+                                <div className="relative col-span-1 row-span-2 rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
+                                    <img src="/src/assets/images/about2.jpg" alt="Rohan Agrahari Main" className="w-full h-[400px] object-cover rounded-2xl" />
+                                    {/* Forbes Badge overlaid on the main image */}
+                                    
                                 </div>
-                                {/* Smaller images */}
-                                {/* The commented out smaller images are kept as is, as the request was only about margin */}
-                                {/* <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
-                                    <img src="https://placehold.co/300x200/1a202c/ffffff?text=Filmmaker" alt="Filmmaker" className="w-full h-auto object-cover" />
+                                {/* Top Right Image */}
+                                <div className="col-span-1 rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
+                                    <img src="/src/assets/images/about3.jpg" alt="Rohan Agrahari Image 2" className="w-full h-[192px] object-cover rounded-2xl" />
                                 </div>
-                                <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
-                                    <img src="https://placehold.co/300x200/1a202c/ffffff?text=Dr.+Vivek+Bindra+Student" alt="Dr.+Vivek+Bindra+Student" className="w-full h-auto object-cover" />
-                                </div> */}
+                                {/* Bottom Right Image */}
+                                <div className="col-span-1 rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 transform hover:scale-105 transition-transform duration-300">
+                                    <img src="/src/assets/images/about1.jpeg" alt="Rohan Agrahari Image 3" className="w-full h-[192px] object-cover rounded-2xl" />
+                                </div>
                             </div>
                         </FadeInWhenVisible>
                     </div>

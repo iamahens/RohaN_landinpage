@@ -14,6 +14,7 @@ import { AboutMe } from './components/sections/AboutMe';
 import { VideoTestimonialsSection } from './components/sections/VideoTestimonialSection';
 import { TestimonialCarouselSection } from './components/sections/TestimonialCarouselSection';
 import { FAQSection } from './components/sections/FAQSection';
+import { ImageCarouselSection } from './components/sections/ImageCarouselSection';
 
 
 export default function App() {
@@ -134,6 +135,7 @@ export default function App() {
               
                 <Identity />
                 <VideoTestimonialsSection/>
+                <ImageCarouselSection/>
                 <TestimonialCarouselSection/>
                  <FAQSection/>
                 <ContactSection/>

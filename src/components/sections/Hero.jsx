@@ -64,7 +64,7 @@ export const Hero = () => (
                         {/* Main image container */}
                         <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-2">
                             <img 
-                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=450&fit=crop&crop=face"
+                                src="/src/assets/images/herosection.jpg"
                                 alt="Expert Professional"
                                 className="w-full h-[350px] lg:h-[450px] object-cover rounded-2xl shadow-2xl"
                             />
