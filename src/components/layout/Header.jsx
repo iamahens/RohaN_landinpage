@@ -36,7 +36,7 @@ export const Header = () => {
             }`}>
                 <div className="container mx-auto px-6 py-4 flex justify-between items-center">
                     <a href="#" className="text-3xl font-black text-white tracking-wider hover:text-orange-400 transition-all duration-300 transform hover:scale-105">
-                        <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Rohan</span>-Agrahari
+                        <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Rohan</span>Agrahari
                     </a>
                     <nav className="hidden md:flex space-x-8 items-center">
                         {navLinks.map((link) => (

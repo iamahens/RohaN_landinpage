@@ -41,7 +41,7 @@ export const AboutMe = () => {
                                     Instagram
                                 </a>
                                 {/* WhatsApp Link */}
-                                <a href="https://wa.me/YOURPHONENUMBER" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-400 hover:text-white transition-colors duration-300">
+                                <a href="https://chat.whatsapp.com/BSPLbsvl9mW5ptGXl4pPZv?mode=ac_t" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-400 hover:text-white transition-colors duration-300">
                                     <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path d="M12.04 2C6.59 2 2.13 6.45 2.13 11.99c0 1.74.45 3.42 1.3 4.9l-1.4 5.14 5.23-1.37c1.45.79 3.08 1.21 4.78 1.21 5.45 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm3.62 14.15c-.17.28-.62.4-1.22.1-.6-.3-.99-.49-1.87-.84-.88-.35-1.89-.88-2.66-1.65-.78-.78-1.28-1.8-1.63-2.68-.35-.88-.12-1.4.15-1.58.27-.17.59-.22.79-.22.19 0 .33.01.44.03.11.02.26.06.41.4.16.34.54 1.3.58 1.4.04.1.07.2.01.31-.06.11-.1.18-.2.27-.1.1-.21.2-.31.31-.1.11-.2.22-.3.32-.1.1-.19.19-.08.38.11.19.4.65.86.99.46.34.82.49 1.09.6.27.11.45.08.62-.09.17-.17.7-.82.95-1.1.25-.28.45-.23.62-.15.17.08 1.08.51 1.27.6.19.09.32.14.37.21.05.07.05.4.01.76-.04.36-.14.4-.24.49z" />
                                     </svg>

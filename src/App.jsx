@@ -11,7 +11,7 @@ import { Footer } from './components/layout/Footer';
 import InstagramCTA from './components/sections/InstagramCTA';
 import ContactSection from './components/sections/ContactSection';
 import { AboutMe } from './components/sections/AboutMe';
-import { VideoTestimonialsSection } from './components/sections/VideoTestimonialSection';
+
 
 import { FAQSection } from './components/sections/FAQSection';
 import { ImageCarouselSection } from './components/sections/ImageCarouselSection';
@@ -134,7 +134,7 @@ export default function App() {
                 <Solution />
               
                 <Identity />
-                <VideoTestimonialsSection/>
+                {/* <VideoTestimonialsSection/> */}
                 <ImageCarouselSection/>
                 
                  <FAQSection/>

@@ -99,7 +99,7 @@ const RegistrationModal = ({ isOpen, onClose }) => {
                         <h2 className="text-2xl font-bold mb-3">Registration Successful!</h2>
                         <p className="text-gray-300 mb-6">Thank you for registering. Click the link below to join our WhatsApp community.</p>
                         <a 
-                            href="https://wa.me/910000000000" // <-- IMPORTANT: Replace with your WhatsApp number
+                            href="https://chat.whatsapp.com/BSPLbsvl9mW5ptGXl4pPZv?mode=ac_t" // <-- IMPORTANT: Replace with your WhatsApp number
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-600 transition-colors"

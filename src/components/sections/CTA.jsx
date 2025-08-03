@@ -22,14 +22,14 @@ export const CTA = () => (
                 </div>
                 
                 <div className="mb-8">
-                    <a href="#" className="inline-block bg-white text-orange-600 font-black py-6 px-12 rounded-2xl text-xl transition-all duration-300 transform hover:scale-105 hover:bg-gray-100 shadow-2xl hover:shadow-3xl">
-                        🚀 Download The E-Book & Join The Group
+                    <a href="https://chat.whatsapp.com/BSPLbsvl9mW5ptGXl4pPZv?mode=ac_t" className="inline-block bg-white text-orange-600 font-black py-6 px-12 rounded-2xl text-xl transition-all duration-300 transform hover:scale-105 hover:bg-gray-100 shadow-2xl hover:shadow-3xl">
+                        Join The Group
                     </a>
                 </div>
                 
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 max-w-3xl mx-auto">
                     <p className="text-orange-100 leading-relaxed">
-                        Click the link to download the e-book to implement this. If you also want me to help you throughout this journey join our <span className="font-bold text-yellow-300">"EAT THAT FROG WHATSAPP GROUP"</span>
+                        Click the link to Join the community.  <span className="font-bold text-yellow-300">"How To Be A Thought Leader"</span>
                     </p>
                 </div>
             </FadeInWhenVisible>
