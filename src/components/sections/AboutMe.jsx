@@ -19,15 +19,15 @@ export const AboutMe = () => {
                     {/* Left Column: Text Content */}
                     <div className="text-left">
                         <FadeInWhenVisible>
-                            <p className="text-gray-400 text-xl mb-4">Hi, I'm</p>
+                            <p className="text-gray-400 text-xl mb-4">Hi , i am</p>
                             <h2 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                                 Rohan Agrahari
                             </h2>
                             <p className="text-orange-400 text-2xl font-bold mb-8">
-                                I'll be your guide on this journey to building your Personal Brand
+                                personal branding expert with over 10 years of experience turning experts into brands ! 
                             </p>
                             <p className="text-gray-300 text-lg leading-relaxed mb-12 max-w-xl">
-                                I started as a Filmmaker, worked in India’s best branding agency, student of Dr. Vivek Bindra. And I breathe content. I want you to help build your Personal Brand.
+                               I started as a filmmaker worked for india’s top branding agency and worked with asia’s no 1 business coach Dr. Vivek bindra. All these experiences makes me master of 3 things content , branding and business and thats why i feel so passionate to co-create your personal brand!!
                             </p>
                         </FadeInWhenVisible>
 

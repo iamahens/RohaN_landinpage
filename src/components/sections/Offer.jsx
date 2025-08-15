@@ -9,11 +9,11 @@ export const Offer = () => (
                 <div className="text-center mb-16">
                     {/* Main heading */}
                     <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        DREAM OUTCOME BY THE END OF 50 MINUTES
+                        Become a Recognized Thought Leader in Just 90 Days
                     </h2>
                     {/* Sub-paragraph */}
                     <p className="text-orange-400 text-2xl font-bold max-w-3xl mx-auto leading-relaxed">
-                        You'll Know Exactly How to <span className="font-bold text-white">Build an Expert Business</span> Within 30 Days.
+                        Invest only 6 hours a month <span className="font-bold text-white">to build influence, authority, </span> and credibility in your field.
                     </p>
                 </div>
             </FadeInWhenVisible>

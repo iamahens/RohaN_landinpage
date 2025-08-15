@@ -1,5 +1,6 @@
 import React from 'react';
-import { FadeInWhenVisible } from '../common/FadeInWhenVisible'; // Assuming this component is available
+import { FadeInWhenVisible } from '../common/FadeInWhenVisible';
+import instaScreenshot from '/images/instascreenshot.png'; // <-- Add your screenshot in the assets folder
 
 // Instagram Icon SVG
 const InstagramIcon = () => (
@@ -26,24 +27,36 @@ const InstagramCTA = () => {
                     }
                 `}
             </style>
+
             <section className="py-20 px-4 bg-gray-900 text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-900/5 to-red-900/5"></div>
                 <div className="container mx-auto text-center relative z-10">
+                    
                     <FadeInWhenVisible>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent
-                                     drop-shadow-lg transition-all duration-500 transform hover:scale-105">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent drop-shadow-lg transition-all duration-500 transform hover:scale-105">
                             Don't Miss a Single Tip!
                         </h2>
                     </FadeInWhenVisible>
+
                     <FadeInWhenVisible delay={100}>
-                        <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto
-                                      transition-all duration-500 transform hover:scale-105">
+                        <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto transition-all duration-500 transform hover:scale-105">
                             Follow the journey on Instagram for daily insights, behind-the-scenes content, and live Q&A sessions.
                         </p>
                     </FadeInWhenVisible>
+
+                    {/* Instagram Screenshot */}
                     <FadeInWhenVisible delay={200}>
+                        <img
+                            src={instaScreenshot}
+                            alt="Instagram Profile Screenshot"
+                            className="mx-auto rounded-lg shadow-lg mb-6 w-72 md:w-96"
+                        />
+                    </FadeInWhenVisible>
+
+                    {/* Follow Button */}
+                    <FadeInWhenVisible delay={300}>
                         <a
-                            href="https://www.instagram.com/viralrohan/?igsh=YTU5dWZyYXY2dDRs#" // <-- IMPORTANT: Add your Instagram link here
+                            href="https://www.instagram.com/viralrohan/?igsh=YTU5dWZyYXY2dDRs#"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-4 px-10 rounded-full text-xl transition-all duration-300 transform hover:scale-110 active:scale-95 cta-button-animated"
@@ -52,6 +65,14 @@ const InstagramCTA = () => {
                             Follow on Instagram
                         </a>
                     </FadeInWhenVisible>
+
+                    {/* Optional: Embed a post */}
+                    {/* <FadeInWhenVisible delay={400}>
+                        <div dangerouslySetInnerHTML={{
+                            __html: `<iframe src="https://www.instagram.com/p/POST_ID/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>`
+                        }}></div>
+                    </FadeInWhenVisible> */}
+
                 </div>
             </section>
         </>

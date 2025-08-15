@@ -22,10 +22,10 @@ export const Problem = () => {
     // Define the problems
     const problems = [
         { emoji: "🤔", text: "Niche not clear" },
-        { emoji: "😔", text: "No time for scripting." },
-        { emoji: "😟", text: "Professional Video shoot is not easy." },
-        { emoji: "💪", text: "Good Editing is painful." },
-        { emoji: "📊", text: "Not made for social media." },
+        { emoji: "😔", text: "Scripting takes hours of time" },
+        { emoji: "😟", text: "Professional  shoot is Expensive" },
+        { emoji: "💪", text: "Good editors are rare" },
+        { emoji: "📊", text: "social media feels like a full time job" },
     ];
 
     // Shuffle the problems array to display them in a random order
@@ -41,7 +41,7 @@ export const Problem = () => {
             <div className="container mx-auto px-6 text-center relative z-10">
                 <FadeInWhenVisible>
                     <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
-                        Do any of these sound familiar?
+                       5 reasons you haven’t build your brand till now
                     </h2>
                     <p className="text-xl text-gray-400 mb-16 max-w-3xl mx-auto">
                         If you recognize yourself in these scenarios, you're not alone.
